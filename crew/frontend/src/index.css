@@ -1,0 +1,57 @@
+/* Remove default padding and margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+}
+
+h1 {
+  text-align: center;
+  color: #1890ff;
+  padding: 20px 0;
+}
+
+.fullscreen-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullscreen-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.table-container {
+  height: 100%;
+}
+
+.ant-table-wrapper {
+  height: 100%;
+}
+
+.ant-table {
+  height: 100%;
+}
+
+.ant-table-container {
+  height: 100%;
+}
+
+.ant-table-body {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
